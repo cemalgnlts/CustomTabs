@@ -1,7 +1,17 @@
 # CustomTabs
 
-* Download project folder and build.
-* Open project to your on phone.
+[![DroidScript](https://img.shields.io/badge/%E2%9D%A4-DroidScript-brightgreen?style=for-the-badge&labelColor=32c974&color=41db84&logoColor=violet)](http://droidscript.org)
+[![DroidStore](https://img.shields.io/badge/DroidStore-Download%20Plugin-brightgreen?style=for-the-badge&labelColor=2196F3&color=217cf4)](https://ds.justplayer.de/uploads/72)
+
+**Install with source codes:**
+* Download project folder and build APK package with Android Studio or AIDE.
+* Open APK package to your on phone.
+* (Re)start DroidScript.
+
+**Install with ready zip file:**
+* Download **customtabs.zip** file from [DroidStore](https://ds.justplayer.de/uploads/72).
+* Check **Plugins** folder exists in DroidScript folder.
+* Move zip file to **DroidScript/Plugins**
 * (Re)start DroidScript.
 
 # Usage
@@ -41,6 +51,8 @@ function btn_OnTouch()
   tabs.OpenUrl("https://droidscript.org")
 }
 ```
+
+For anny issues write [DroidScript Forum](https://groups.google.com/g/androidscript).
 
 # License
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)

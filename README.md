@@ -8,11 +8,9 @@
 * Open APK package to your on phone.
 * (Re)start DroidScript.
 
-**Install with ready zip file:**
-* Download **customtabs.zip** file from [DroidStore](https://ds.justplayer.de/uploads/72).
-* Check **Plugins** folder exists in DroidScript folder.
-* Move zip file to **DroidScript/Plugins**
-* (Re)start DroidScript.
+**Install with ppk file:**
+* Download **customtabs.ppk** file from [DroidStore](https://ds.justplayer.de/uploads/72).
+* Click **customtabs.ppk** file and select DroidScript.
 
 # Usage
 Put yours project top:

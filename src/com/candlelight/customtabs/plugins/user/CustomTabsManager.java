@@ -16,7 +16,8 @@ import androidx.browser.customtabs.CustomTabsSession;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomTabsManager {
+public class CustomTabsManager
+{
     final String BROWSER_CHROME = "com.android.chrome";
     final String BROWSER_SAMSUNG = "com.sec.android.app.sbrowser";
 
@@ -77,9 +78,9 @@ public class CustomTabsManager {
      */
     public String getCustomTabsPackageName(ArrayList<String> packages) {
         // If chrome exists select chrome default.
-        if (packages.contains(BROWSER_CHROME))
+        if(packages.contains(BROWSER_CHROME))
             return BROWSER_CHROME;
-        else if (packages.contains(BROWSER_SAMSUNG))
+        else if(packages.contains(BROWSER_SAMSUNG))
             return BROWSER_SAMSUNG;
         else
             return packages.get(0);
@@ -96,13 +97,13 @@ public class CustomTabsManager {
         // Get all apps that can handle VIEW intents.
         List<ResolveInfo> resolvedActivityList = pm.queryIntentActivities(activityIntent, PackageManager.MATCH_ALL);
         ArrayList<String> listSupportingCustomTabs = new ArrayList<>();
-        for (ResolveInfo info: resolvedActivityList) {
+        for(ResolveInfo info: resolvedActivityList) {
             Intent serviceIntent = new Intent();
             serviceIntent.setAction(CustomTabsService.ACTION_CUSTOM_TABS_CONNECTION);
             serviceIntent.setPackage(info.activityInfo.packageName);
 
             // Check if this package also resolves the Custom Tabs service.
-            if (pm.resolveService(serviceIntent, 0) != null) {
+            if(pm.resolveService(serviceIntent, 0) != null) {
                 listSupportingCustomTabs.add(info.activityInfo.packageName);
             }
         }

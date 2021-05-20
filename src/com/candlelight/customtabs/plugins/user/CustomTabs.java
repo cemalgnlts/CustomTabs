@@ -14,7 +14,7 @@ import java.lang.reflect.Method;
 public class CustomTabs
 {
 	public static String TAG = "CustomTabs";	
-	public static float VERSION = 1.0f;	
+	public static float VERSION = 3.0f;	
 	private Method m_callscript;
 	private Object m_parent;
 	private Context m_ctx;
